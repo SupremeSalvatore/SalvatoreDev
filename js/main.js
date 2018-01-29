@@ -68,9 +68,10 @@ window.onload = function () {
             navigator.geolocation.getCurrentPosition(myPosition);
       }
 }
-
+//  let tryout1= https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?
+//  let tryout2= http://api.openweathermap.org/data/2.5/weather?
 function updateByGeo(lat, lon) {
-      var url = "http://api.openweathermap.org/data/2.5/weather?" +
+      var url = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?" +
             "lat=" + lat +
             "&lon=" + lon +
             "&APPID=" + apiKey;
