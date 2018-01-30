@@ -87,15 +87,27 @@ header .carousel-control-next:hover {
   width: 100px;
   fill: #fff; }
 
-#myFooter a, #myFooter p {
-  color: #28A745; }
+footer {
+  background-color: #2C3E50;
+  padding-top: 50px; }
 
-#myFooter a:hover {
+footer .nav-links li a {
+  color: #28A745;
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: lighter; }
+
+footer .social-links li a {
+  color: #28A745;
+  padding: 0px 20px; }
+
+footer #copyright {
+  color: #28A745;
+  font-size: 16px;
+  padding-top: 20px; }
+
+footer li a:hover {
   color: #ffffff; }
-
-#myFooter i {
-  padding: 10px;
-  font-size: 25px; }
 
 @media screen and (max-width: 1024px) {
   .nav-link {
