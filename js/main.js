@@ -68,15 +68,13 @@ window.onload = function () {
             navigator.geolocation.getCurrentPosition(myPosition);
       }
 }
-//  let tryout1= https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?
-//  let tryout2= http://api.openweathermap.org/data/2.5/weather?
+
 function updateByGeo(lat, lon) {
-      var url = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?" +
+      var url = "http://api.openweathermap.org/data/2.5/weather?" +
             "lat=" + lat +
             "&lon=" + lon +
             "&APPID=" + apiKey;
       sendRequest(url);
-      // console.log(url);
 }
 
 function sendRequest(url) {
@@ -87,16 +85,12 @@ function sendRequest(url) {
                   let myData = JSON.parse(myRequest.responseText);
                   let weather = {};
                   weather.location = myData.name;
-                  // console.log(weather.location);
                   weather.tempC = K2C(myData.main.temp);
                   weather.tempF = K2F(myData.main.temp);
-                  // console.log(weather.temp);
                   weather.icon = myData.weather[0].icon;
-                //   console.log(weather.icon);
                   weather.humid = myData.main.humidity;
                   weather.wspeed=myData.wind.speed;
                   weather.pressure=myData.main.pressure;
-                  // update(myData);
                   update(weather);
             }
       }
