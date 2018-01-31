@@ -70,7 +70,7 @@ window.onload = function () {
 }
 
 function updateByGeo(lat, lon) {
-      var url = "http://api.openweathermap.org/data/2.5/weather?" +
+      var url = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?" +
             "lat=" + lat +
             "&lon=" + lon +
             "&APPID=" + apiKey;
