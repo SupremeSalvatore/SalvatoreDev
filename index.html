@@ -7,7 +7,7 @@
   <meta name="keywords" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.min.css">
   <link rel="stylesheet" type="text/css" href="css/hoverbuttons.css">
@@ -33,7 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mt-2 mt-lg-0 ml-auto text-uppercase font-weight-bold">
             <li>
-              <a class="nav-link text-white hbtn hb-border-bottom-br4" href="#home">Home</a>
+              <a class="nav-link text-white hbtn hb-border-bottom-br4" href="#home" >Home</a>
             </li>
             <li>
               <a class="nav-link text-white hbtn hb-border-bottom-br4" href="#about">About</a>
@@ -98,14 +98,12 @@
         <div class="col-md-12">
           <div class="section-header text-center">
             <h2 class="mt-3 font-weight-light" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">About Me</h2>
-            <br>
-            <p class="wow fadeInUp lead mt-3" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">Hello I'm
+            <hr class="content-hr">
+            <p class="wow fadeInUp lead mt-4" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">Hello I'm
               <strong>Miloš Poskurica</strong> and I'm trying to take part in this fast-paced development world.</p>
-            <br>
-            <p class="wow fadeInUp lead mt-3" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">I want to
+            <p class="wow fadeInUp lead" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">I want to
               <strong>start developing real applications and websites</strong> in order to learn even more about development. </p>
-            <br>
-            <p class="wow fadeInUp lead mt-3" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">If you are looking for
+            <p class="wow fadeInUp lead" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">If you are looking for
               <strong>dedicated, hardworking, never give up</strong> kind of person then I will meet your expectations.</p>
             </p>
           </div>
@@ -119,7 +117,8 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-header text-center">
-            <h2 class="pb-3 font-weight-light" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">My portfolio</h2>
+            <h2 class="font-weight-light" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">My portfolio</h2>
+            <hr class="content-hr">
             <p class="wow fadeInUp mt-3 font-weight-light lead" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">Here are some applications and websites i was working on in previous months of learning, more you can find on
               my
               <span>
@@ -213,7 +212,8 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-header text-center">
-            <h2 class="mt-3 pb-3 font-weight-light" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">My Services</h2>
+            <h2 class="font-weight-light" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">My Services</h2>
+            <hr class="content-hr">
             <p class="wow fadeInUp lead mt-3" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">During this learning period I was mostly focused on learning basics. I think I got a nice grip of
               <strong>controling DOM with Javascript, Responsive Design,</strong> learning to use some
               <strong>outside libraries</strong> outside libraries and much more. </p>
@@ -263,8 +263,10 @@
           </div>
         </div>
       </div>
-      <div class="col-md-12">
-        <p class="lead text-center">My next steps are to deploy some basic full stack page/app with PHP, mySql, learn Vue.js and go deep in API usage.</p>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead text-center wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.45s">My next steps are to deploy some basic full stack page/app with PHP, mySql, learn Vue.js and go deep in API usage.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -275,20 +277,20 @@
       <div class="row">
         <div class="col-md-8 col-sm-12">
           <div class="quote-text mt-5 text-white">
-            <h3 class="text-center font-weight-light p-3" id="quote">
-            </h3>
+            <h2 class="text-center font-weight-light p-3" id="quote">
+            </h2>
             <p class="text-right blockquote-footer size p-3" id="author"></p>
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-          <h3 class="text-center font-weight-light text-white pt-1">Weather on your location</h3>
-          <div class="text-center text-white">
+          <h2 class="text-center font-weight-light text-white pt-1">Weather on your location</h2>
+          <div class="text-center text-white font-weight-light">
             <p id="location"></p>
           </div>
           <div class="d-flex justify-content-center text-white">
             <img id="icon" src="" class="" />
           </div>
-          <div class="mb-1 text-center text-white">
+          <div class="mb-1 text-center text-white font-weight-light">
             <p id="temperature"></p>
             <p id="humidity"></p>
             <p id="wspeed"></p>
@@ -302,19 +304,22 @@
   <section id="contact" class=" contact-area mt-4">
     <div class="section-content">
       <div class="container">
-        <div class=" offset-md-3 col-md-6 p-3">
-          <div class="about-text text-center p-2">
-            <h3 class="wow fadeInDown font-weight-light">Contact me</h3>
-            <p class="lead wow fadeInDown">If you would like me to collaborate with you feel free to contact me on:</p>
-            <a href="mailto:milosposkuricakg@gmail.com" class="btn btn-outline-success m-2 wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s"
-              data-wow-delay="0.30s">
-              <i class="fa fa-envelope pr-1"></i>Email Me</a>
-            <a href="https://github.com/SupremeSalvatore" class="btn btn-outline-success m-2 wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s"
-              data-wow-delay="0.30s">
-              <i class="fa fa-github pr-1"></i>Github</a>
-            <a href="http://steamcommunity.com/id/supremesalvatore/" class="btn btn-outline-success m-2 wow fadeInUp" data-wow-offset="30"
-              data-wow-duration="1.5s" data-wow-delay="0.30s">
-              <i class="fa fa-steam pr-1"></i>Steam</a>
+        <div class="row">
+          <div class=" offset-md-3 col-md-6 p-3">
+            <div class="about-text text-center p-2">
+              <h2 class="wow fadeInDown font-weight-light">Contact me</h3>
+              <hr class="content-hr">
+              <p class="lead wow fadeInDown">If you would like me to collaborate with you feel free to contact me on:</p>
+              <a href="mailto:milosposkuricakg@gmail.com" class="btn btn-outline-success m-2 wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s"
+                data-wow-delay="0.30s">
+                <i class="fa fa-envelope pr-1"></i>Email Me</a>
+              <a href="https://github.com/SupremeSalvatore" class="btn btn-outline-success m-2 wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s"
+                data-wow-delay="0.30s">
+                <i class="fa fa-github pr-1"></i>Github</a>
+              <a href="http://steamcommunity.com/id/supremesalvatore/" class="btn btn-outline-success m-2 wow fadeInUp" data-wow-offset="30"
+                data-wow-duration="1.5s" data-wow-delay="0.30s">
+                <i class="fa fa-steam pr-1"></i>Steam</a>
+            </div>
           </div>
         </div>
       </div>
@@ -359,7 +364,7 @@
       </li>
     </ul>
     <div id="copyright" class="text-center">
-      <p>Created by Salvatore Dev | &copy; Copyright 2018 | All Rights Reserved</p>
+      <p class="lead">Created by Salvatore Dev | &copy; Copyright 2018 | All Rights Reserved</p>
     </div>
   </footer>
 

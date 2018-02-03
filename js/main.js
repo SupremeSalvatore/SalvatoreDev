@@ -2,6 +2,13 @@
 
 new WOW().init();
 
+// Colapse Navbar on click
+
+$('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+  });
+
+
 // Random Quote Generator
 
 const quote = document.getElementById("quote");
