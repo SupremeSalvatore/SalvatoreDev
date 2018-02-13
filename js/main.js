@@ -4,9 +4,9 @@ new WOW().init();
 
 // Colapse Navbar on click
 
-$('.navbar-nav>li>a').on('click', function(){
+$('.navbar-nav>li>a').on('click', function () {
       $('.navbar-collapse').collapse('hide');
-  });
+});
 
 
 // Random Quote Generator
@@ -17,38 +17,38 @@ const author = document.getElementById("author");
 const url = "https://supremesalvatore.github.io/JSON-Examples/quotes.json";
 
 function getData() {
-    let data = new XMLHttpRequest();
-    data.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            let quotes = JSON.parse(this.responseText);
-            let number = Math.floor(Math.random() * quotes.length);
-            //For short quotes etc
-            //  for (let i=0;i<quotes[number].quoteText.length;i++){
-            //     if (quotes[i].quoteText.split(" ").length<10){
-            //         quote.innerHTML=quotes[i].quoteText;
-            //         author.innerHTML=quotes[i].quoteAuthor;
-            //      }
-            //  }
-            quote.innerHTML = quotes[number].quoteText;
-            author.innerHTML = quotes[number].quoteAuthor;
-            quote.classList.add("quoteAni", "fadeInLeft");
-            author.classList.add("authorAni", "fadeInRight");
-            var quotesAni = new WOW({
-                boxClass: 'quoteAni',
-                animateClass: 'animated'
-            });
-            quotesAni.init();
-            var authorAni = new WOW({
-                boxClass: 'authorAni',
-                animateClass: 'animated'
-            });
-            authorAni.init();
-        } else {
+      let data = new XMLHttpRequest();
+      data.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                  let quotes = JSON.parse(this.responseText);
+                  let number = Math.floor(Math.random() * quotes.length);
+                  //For short quotes etc
+                  //  for (let i=0;i<quotes[number].quoteText.length;i++){
+                  //     if (quotes[i].quoteText.split(" ").length<10){
+                  //         quote.innerHTML=quotes[i].quoteText;
+                  //         author.innerHTML=quotes[i].quoteAuthor;
+                  //      }
+                  //  }
+                  quote.innerHTML = quotes[number].quoteText;
+                  author.innerHTML = quotes[number].quoteAuthor;
+                  quote.classList.add("quoteAni", "fadeInLeft");
+                  author.classList.add("authorAni", "fadeInRight");
+                  var quotesAni = new WOW({
+                        boxClass: 'quoteAni',
+                        animateClass: 'animated'
+                  });
+                  quotesAni.init();
+                  var authorAni = new WOW({
+                        boxClass: 'authorAni',
+                        animateClass: 'animated'
+                  });
+                  authorAni.init();
+            } else {
 
-        }
-    }
-    data.open("GET", url, true);
-    data.send();
+            }
+      }
+      data.open("GET", url, true);
+      data.send();
 }
 getData();
 setInterval(getData, 9000);
@@ -63,7 +63,7 @@ let loc = document.getElementById('location');
 let icon = document.getElementById('icon');
 let humid = document.getElementById('humidity');
 let wspeed = document.getElementById('wspeed');
-let pressure=document.getElementById('pressure');
+let pressure = document.getElementById('pressure');
 
 
 window.onload = function () {
@@ -96,8 +96,8 @@ function sendRequest(url) {
                   weather.tempF = K2F(myData.main.temp);
                   weather.icon = myData.weather[0].icon;
                   weather.humid = myData.main.humidity;
-                  weather.wspeed=myData.wind.speed;
-                  weather.pressure=myData.main.pressure;
+                  weather.wspeed = myData.wind.speed;
+                  weather.pressure = myData.main.pressure;
                   update(weather);
             }
       }
@@ -112,7 +112,7 @@ function update(weather) {
       icon.src = "icons/weather/" + weather.icon + ".svg";
       humid.textContent += "Humidity: " + weather.humid + " %";
       wspeed.textContent += "Wind speed is " + weather.wspeed + " m/s";
-      pressure.textContent +="Pressure is " + weather.pressure+ " mbar";
+      pressure.textContent += "Pressure is " + weather.pressure + " mbar";
 }
 
 function K2C(k) {
@@ -122,5 +122,3 @@ function K2C(k) {
 function K2F(k) {
       return Math.round(k * (9 / 5) - 459.67);
 }
-
-
